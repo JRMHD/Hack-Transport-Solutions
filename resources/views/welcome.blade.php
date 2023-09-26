@@ -1,132 +1,796 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+    <link rel="icon" href="hack-lg.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="hack-lg.ico" type="image/x-icon">
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Hack Solutions Usa Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.text-center{text-align:center}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
-        </style>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
+    <link rel="stylesheet" href="css/aos.css">
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images\hack  lg.png" alt="" class="navbar-logo" style="max-height: 100px;">
+                Hack<span>Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="{{ route('pricing') }}" class="nav-link">Pricing</a></li>
+                    <!-- Add more links as needed -->
+                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- END nav -->
+
+    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text justify-content-start align-items-center">
+                <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
+                    <div class="text">
+                        <h1 class="mb-4">Discover <span>Effortless Vehicle Rentals</span></h1>
+                        <p style="font-size: 18px;">Experience the convenience of renting a Vehicle with us. We offer
+                            top-notch services to make your journey smooth and worry-free.</p>
+                        <a href="https://youtu.be/xh7_uzq7UQE?si=vo97g2sWOmcCMpAf"
+                            class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-play"></span>
                             </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
+                            <div class="heading-title ml-5">
+                                <span>Watch Our Rental Process</span>
                             </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
+                        </a>
                     </div>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                </div>
+                <div class="col-lg-2 col"></div>
+                <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
+                    <form action="#" class="request-form ftco-animate">
+                        <h2>Plan Your Journey</h2>
+                        <div class="form-group">
+                            <label for="" class="label">Starting Point</label>
+                            <input type="text" class="form-control" placeholder="Your Location">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Destination</label>
+                            <input type="text" class="form-control" placeholder="Your Destination">
+                        </div>
+                        <div class="d-flex">
+                            <div class="form-group mr-2">
+                                <label for="" class="label">Departure Date</label>
+                                <input type="text" class="form-control" id="departure_date" placeholder="Date">
+                            </div>
+                            <div class="form-group ml-2">
+                                <label for="" class="label">Return Date</label>
+                                <input type="text" class="form-control" id="return_date" placeholder="Date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="label">Preferred Time</label>
+                            <input type="text" class="form-control" id="preferred_time" placeholder="Time">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Find a Vehicle" class="btn btn-primary py-3 px-4">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="custom-search-section ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="custom-search-wrap ftco-animate mb-5">
+                        <form action="#" class="custom-search-form">
+                            <div class="row">
+                                <div class="col-lg align-items-end">
+                                    <div class="form-group">
+                                        <label for="#">Vehicle Type</label>
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Select Type</option>
+                                                    <option value="">SUV</option>
+                                                    <option value="">Sedan</option>
+                                                    <option value="">Truck</option>
+                                                    <option value="">Van</option>
+                                                    <option value="">Convertible</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg align-items-end">
+                                    <div class="form-group">
+                                        <label for="#">Price Range</label>
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">$1 - $50</option>
+                                                    <option value="">$51 - $100</option>
+                                                    <option value="">$101 - $200</option>
+                                                    <option value="">$201 - $300</option>
+                                                    <option value="">$301 - $400</option>
+                                                    <option value="">$401 - $500</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg align-self-end">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <input type="submit" value="Find Vehicles"
+                                                class="form-control btn btn-primary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </section>
+
+
+
+    <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading" style="color: #333;">Our Unique Services</span>
+                    <h2 class="mb-2" style="color: #222;">Explore What We Offer</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
+                        <div class="media-body py-md-4">
+                            <div class="d-flex mb-3 align-items-center">
+                                <div class="icon" style="background-color: #ff9900; color: #fff;"><span
+                                        class="flaticon-customer-support"></span></div>
+                                <h3 class="heading mb-0 pl-3">24/7 Assistance</h3>
+                            </div>
+                            <p>Our dedicated support team is available round-the-clock to assist you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
+                        <div class="media-body py-md-4">
+                            <div class="d-flex mb-3 align-items-center">
+                                <div class="icon" style="background-color: #0099cc; color: #fff;"><span
+                                        class="flaticon-route"></span></div>
+                                <h3 class="heading mb-0 pl-3">Convenient Locations</h3>
+                            </div>
+                            <p>Find us at multiple locations to serve your travel needs more conveniently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
+                        <div class="media-body py-md-4">
+                            <div class="d-flex mb-3 align-items-center">
+                                <div class="icon" style="background-color: #ff6699; color: #fff;"><span
+                                        class="flaticon-online-booking"></span></div>
+                                <h3 class="heading mb-0 pl-3">Easy Reservations</h3>
+                            </div>
+                            <p>Make hassle-free reservations online or through our mobile app.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
+                        <div class="media-body py-md-4">
+                            <div class="d-flex mb-3 align-items-center">
+                                <div class="icon" style="background-color: #33cc33; color: #fff;"><span
+                                        class="flaticon-rent"></span></div>
+                                <h3 class="heading mb-0 pl-3">Wide Vehicle Selection</h3>
+                            </div>
+                            <p>Choose from a diverse range of vehicles to suit your transportation needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ftco-section">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading">What we offer</span>
+                    <h2 class="mb-2">Choose Your Vehicle</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/26ft.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">$749</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/week</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Box Truck 26ft</a></h2>
+                            <span></span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/24ft.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">$709</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/WEEK</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Box Truck 24ft</a></h2>
+                            <span></span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/20ft.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">$399</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/WEEK</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Box Truck 20ft</a></h2>
+                            <span> </span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/16ft.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">$349</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/WEEK</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Box Truck 16ft</a></h2>
+                            <span></span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/14ft.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">$299</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/WEEK</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Box Truck 14ft</a></h2>
+                            <span></span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/sedans.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">19.99</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/Day</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="#">Sedans</a></h2>
+                            <span>TOYOTA</span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/suv.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">19.99</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/Day</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="">SUVs</a></h2>
+                            <span>TOYOTA</span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="car-wrap ftco-animate">
+                        <div class="img d-flex align-items-end" style="background-image: url(images/lexus.jpg);">
+                            <div class="price-wrap d-flex">
+                                <span class="rate">25.99</span>
+                                <p class="from-day">
+                                    <span>From</span>
+                                    <span>/Day</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text p-4 text-center">
+                            <h2 class="mb-0"><a href="">Lexus Sedans</a></h2>
+                            <span>TOYOTA</span>
+                            <p class="d-flex mb-0 d-block"><a href="contact.html"
+                                    class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="contact.html"
+                                    class="btn btn-black btn-outline-black ml-1">Details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-services-section ftco-section services-section img"
+        style="background-image: url(images/24ft.jpg);">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <span class="subheading" style="color: #fff;">Our Process</span>
+                    <h2 class="mb-3" style="color: #fff;">How It Works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #ff9900; color: #fff;"><span class="flaticon-route"></span>
+                            </div>
+                            <h3 style="color: #fff;">Choose Destination</h3>
+                            <p style="color: #fff;">Select your desired destination for your journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #0099cc; color: #fff;"><span class="flaticon-select"></span>
+                            </div>
+                            <h3 style="color: #fff;">Select Term</h3>
+                            <p style="color: #fff;">Choose the duration of your rental term.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #ff6699; color: #fff;"><span class="flaticon-rent"></span>
+                            </div>
+                            <h3 style="color: #fff;">Choose A Vehicle</h3>
+                            <p style="color: #fff;">Select a vehicle that suits your needs and preferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #33cc33; color: #fff;"><span class="flaticon-review"></span>
+                            </div>
+                            <h3 style="color: #fff;">Enjoy Your Ride</h3>
+                            <p style="color: #fff;">Relax and enjoy your journey with our comfortable vehicles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Testimonial</span>
+                    <h2 class="mb-3">Happy Clients</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Youll have an amazing experience leasing Vehicles with Our
+                                        company. Our services are top-notch!</p>
+                                    <p class="name">Charles Green</p>
+                                    <span class="position">CEO HACK SOLUTIONS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/charles.jpeg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">The box trucks offered by this company are exceptional. They
+                                        helped streamline our supply chain operations.</p>
+                                    <p class="name">Aaron Alves</p>
+                                    <span class="position">Supply Chain Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Working with this company's box truck leasing experts has been a
+                                        game-changer for our business.</p>
+                                    <p class="name">David Johnson</p>
+                                    <span class="position">Logistics Coordinator</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Their box truck leasing solutions have significantly improved our
+                                        efficiency and cost-effectiveness.</p>
+                                    <p class="name">Robert Wilson</p>
+                                    <span class="position">Transportation Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/emily.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">I'm impressed with their dedication and expertise in box truck
+                                        leasing.</p>
+                                    <p class="name">Emily Johnson</p>
+                                    <span class="position">Logistics Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Company Team</span>
+                    <h2 class="mb-3">Meet Our Team</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Meet our CEO, Charles Green. He leads the way with passion and
+                                        expertise.</p>
+                                    <p class="name">Charles Green</p>
+                                    <span class="position">CEO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's our
+                                        tech wizard!</p>
+                                    <p class="name">JRMHD (Reagan Mukabana)</p>
+                                    <span class="position">Software Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+                    style="background-image: url(images/about.jpg);">
+                </div>
+                <div class="col-md-6 wrap-about py-md-5 ftco-animate">
+                    <div class="heading-section mb-5 pl-md-5">
+                        <h2 class="mb-4">About Us</h2>
+                        <p>Welcome to Hack Solutions USA</p>
+
+                        <p>We are your trusted partner for all your box truck leasing needs. With a fleet of 14ft, 16ft,
+                            20ft, 24ft, and 26ft straight box trucks, we provide flexible leasing options starting at
+                            just $19.99 per day.</p>
+
+                        <p>Our mission is to make it easy for you to rent a truck for your business or personal use.
+                            Whether you need a box truck for moving, transportation, or any other purpose, we have the
+                            perfect vehicle for you.</p>
+
+                        <p>Explore our selection of box trucks and find the one that suits your needs. Contact us today
+                            to start your leasing journey with Hack Solutions USA.</p>
+
+                        <p><a href="#" class="btn btn-primary">Search Vehicle</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">Blog</span>
+            <h2>Recent Blog</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text pt-4">
+              <div class="meta mb-3">
+                  <div><a href="#">July. 24, 2019</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+              <div class="meta mb-3">
+                  <div><a href="#">July. 24, 2019</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text pt-4">
+              <div class="meta mb-3">
+                  <div><a href="#">July. 24, 2019</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                </div>
+                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>		 -->
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About Hack Solutions USA</h2>
+                        <p>We are your trusted partner for box truck leasing solutions. Our fleet includes a variety of
+                            box trucks, ranging from 14ft to 26ft, suitable for both personal and business needs.</p>
+                        <!-- <p>Our mission is to provide reliable and affordable box truck rental services to help you transport your goods safely and efficiently. With Hack Solutions USA, you can expect top-notch service and well-maintained vehicles.</p> -->
+                        <div class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+                            <!-- Social Media Links -->
+                            <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.facebook.com/profile.php?id=100039978403586"><span
+                                        class="icon-facebook"></span></a></li>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Information</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">About</a></li>
+                            <li><a href="#" class="py-2 d-block">Services</a></li>
+                            <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+                            <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+                            <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Customer Support</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">FAQ</a></li>
+                            <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+                            <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
+                            <li><a href="#" class="py-2 d-block">How it works</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">901 Dulaney Valley
+                                        Rd Ste 110,Towson, MD 21204</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1
+                                            800 774 9450</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">
+                                            cgreen@hacksolutionusa.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> Hack Solutions USA. All rights reserved. Developed by <a
+                            href="https://wa.me/19293905426" target="_blank">JRMHD</a>
+                    </p>
+                </div>
+            </div>
+
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
+                stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
+                stroke-miterlimit="10" stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>

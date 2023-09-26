@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/pricing', 'PricingController@index')->name('pricing');
+Route::get('/contact', 'ContactController@index')->name('contact');
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
