@@ -41,14 +41,14 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <!-- <li class="nav-item"><a href="car.html" class="nav-link">Our Car</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="{{ route('pricing') }}" class="nav-link">Pricing</a></li>
+              <!-- Add more links as needed -->
+              <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
+          </ul>
+      </div>
 	      </div>
 	    </div>
 	  </nav>

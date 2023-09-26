@@ -23,3 +23,7 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+
