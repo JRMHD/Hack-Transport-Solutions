@@ -45,7 +45,7 @@
               <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
               <li class="nav-item"><a href="{{ route('pricing') }}" class="nav-link">Pricing</a></li>
-              <!-- Add more links as needed -->
+              <!--  more links -->
               <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
           </ul>
       </div>
